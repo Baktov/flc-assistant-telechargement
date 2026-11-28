@@ -41,10 +41,11 @@ complète.
 
 - **Windows 10 ou 11** (64 bits).
 - **Un accès à Claude**, au choix :
-  - **un abonnement qui inclut Claude Code** (Pro ou Max), avec
-    [Claude Code](https://claude.com/claude-code) installé et connecté sur ce PC. Pour le vérifier :
-    ouvre un terminal, tape `claude`, Entrée ; s'il démarre et te connaît, c'est bon (`/exit` pour
-    quitter) ;
+  - **un abonnement qui inclut Claude Code** (Pro ou Max), avec Claude Code sur ce PC sous l'une
+    de ces formes : l'**application de bureau Claude** (onglet Code), l'**extension Claude Code de
+    VS Code**, ou la **commande `claude`** ([claude.com/claude-code](https://claude.com/claude-code)).
+    FLC Assistant les trouve tout seul. Si ça ne marche pas avec l'application de bureau, installe
+    aussi la commande (gratuit, même compte) : ouvre un terminal, tape `claude`, connecte-toi ;
   - **ou un compte API**, payé à l'usage, sans abonnement (voir plus bas).
 
   Un simple compte gratuit ne suffit pas : l'offre gratuite de Claude ne comprend pas Claude Code.
@@ -113,6 +114,7 @@ FLC Assistant sait utiliser à la place.
 | Message ou problème | Que faire |
 | --- | --- |
 | « Impossible de lancer Claude Code » | Tu es en mode Abonnement mais Claude Code n'est pas installé ou pas trouvé : vérifie que `claude` marche dans un terminal, puis relance FLC Assistant. Sans abonnement, choisis **Clé d'API**. |
+| « Claude Code n'est pas connecté » | Claude Code a été trouvé (souvent celui de l'application de bureau) mais n'est pas connecté hors de l'application : installe la commande `claude` ([claude.com/claude-code](https://claude.com/claude-code)), tape `claude` dans un terminal, connecte-toi, relance FLC Assistant. |
 | Claude Code renvoie une erreur | Souvent une connexion expirée ou un quota atteint : lance `claude` dans un terminal pour voir le message. |
 | « Pas d'accès à l'API » | Mode Clé d'API sans clé trouvée : suis « Sans abonnement : compte API », puis relance. |
 | « L'API a refusé… crédit » | Crédits épuisés ou limite atteinte : recharge-les dans la Claude Console. |
